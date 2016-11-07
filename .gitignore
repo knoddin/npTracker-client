@@ -256,7 +256,7 @@ config/initializers/secret_token.rb
 ### Ember ###
 # see https://github.com/ember-cli/ember-cli/blob/master/blueprints/app/files/gitignore
 # compiled output
-/dist
+# /dist
 /tmp
 
 # dependencies
