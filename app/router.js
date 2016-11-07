@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('park');
   this.route('new-park');
+  this.route('parks');
 });
 
 export default Router;

@@ -4,14 +4,14 @@
 {{new-park-description description=park.description}}
 
 
-<button type="submit" class="btn btn-success submit" {{action "submit"}} on="click">
+<button type="submit" class="btn btn-success submit" {{action "createPark"}} on="click">
   Add Park
 </button>
 <button class="btn btn-default" {{action "reset"}} on="click">
   Cancel
 </button>
 
-<!-- {{#link-to '#'}}
+{{#link-to 'index'}}
 <button class="btn btn-default">
- Go back  </button>
-{{/link-to}} -->
+ Home</button>
+{{/link-to}}

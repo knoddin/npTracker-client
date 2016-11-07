@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   park: {},
 
   actions: {
-   submit () {
+   createPark () {
      this.sendAction('createPark', this.get('park'));
    },
 
@@ -14,4 +14,4 @@ export default Ember.Component.extend({
      this.set('park', {});
    },
  },
- });
+});
