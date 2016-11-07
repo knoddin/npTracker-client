@@ -1,0 +1,17 @@
+
+{{new-park-name name=park.name}}
+{{new-park-location location=park.location}}
+{{new-park-description description=park.description}}
+
+
+<button type="submit" class="btn btn-success submit" {{action "submit"}} on="click">
+  Add Park
+</button>
+<button class="btn btn-default" {{action "reset"}} on="click">
+  Cancel
+</button>
+
+<!-- {{#link-to '#'}}
+<button class="btn btn-default">
+ Go back  </button>
+{{/link-to}} -->
