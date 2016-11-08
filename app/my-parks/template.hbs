@@ -1,20 +1,18 @@
 <h2>My Parks</h2>
 
-<!-- {{my-parks park=model
-          createPark='createPark'
-          updatePark='updatePark'
-          deletePark='deletePark'}} -->
-<!--
 
-{{#if park.editable}}
-  <li>{{park.name}} {{park.location}} {{park.description}} {{park.id}} {{park.user_id}}</li>
-{{/if}} -->
+<div class="col-md-8 col-md-offset-2">
 
 
-<ul>
-{{#each model as |park|}}
-{{#if park.editable}}
-  <li>{{park.name}} {{park.location}} {{park.description}} {{park.id}} {{park.user_id}}</li>
-  {{/if}}
-{{/each}}
-</ul>
+  {{#each model as |park|}}
+  {{#if park.editable}}
+    <div>
+      <h3 id="park-titles" class="my-parks">{{park.name}}, {{park.location}} </h3>
+      <h4 id="park-description" class="my-parks">{{park.description}}</h4>
+    </div>
+      <br>
+    {{/if}}
+  {{/each}}
+
+
+ </div>

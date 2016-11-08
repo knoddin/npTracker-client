@@ -1,11 +1,16 @@
-<h2>All Parks</h2>
-<br>
-
-<!-- {{all-parks park=model}} -->
+<h2>My Parks</h2>
 
 
-<div>
-{{#each model as |park|}}
-  <div><h3>{{park.name}}, {{park.location}}</h3> <br> <h4>Description: {{park.description}}</h4>{{park.id}} {{park.user_id}}</div>
-{{/each}}
-</div>
+<div class="col-md-8 col-md-offset-2">
+
+
+  {{#each model as |park|}}
+    <div>
+      <h3 id="park-titles" class="my-parks">{{park.name}}, {{park.location}} </h3>
+      <h4 id="park-description" class="my-parks">{{park.description}}</h4>
+    </div>
+      <br>
+  {{/each}}
+
+
+ </div>
