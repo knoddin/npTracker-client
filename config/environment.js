@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   'use strict';
-  const ENV = {
+  var ENV = {
     modulePrefix: 'npTracker.knoddin',
     environment: environment,
     rootURL: '/',
