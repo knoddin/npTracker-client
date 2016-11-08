@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   // when router enters the route
   activate: function(){
-        $('body').css('background', "url('http://i.imgur.com/8tFOa3P.jpg') no-repeat center center fixed");
+        $('body').css('background', "url('/assets/images/np.jpeg') no-repeat center center fixed");
         $('body').css('background-size', 'cover');
         Ember.$('body').append();
       },
