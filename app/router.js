@@ -17,6 +17,7 @@ Router.map(function () {
   this.route('my-parks');
   this.route('all-parks');
   this.route('update-park', { path: '/update-park/:id'});
+  this.route('delete-park');
 });
 
 export default Router;
