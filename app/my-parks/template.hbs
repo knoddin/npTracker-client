@@ -6,11 +6,23 @@
 
   {{#each model as |park|}}
   {{#if park.editable}}
-    <div>
+    <!-- <div> -->
       <h3 id="park-titles" class="my-parks">{{park.name}}, {{park.location}} </h3>
       <h4 id="park-description" class="my-parks">{{park.description}}</h4>
-    </div>
-      <br>
+
+      {{#link-to 'update-park' park class="btn btn-xs edit"}}
+        Edit Park
+        {{/link-to}}
+
+      <!-- {{#link-to 'park' park}}
+      <button id="delete" class="btn btn-xs btn-danger" >
+        Delete
+      </button>
+     <hr class= "style-five">
+      {{/link-to}} -->
+
+    <!-- </div> -->
+      <!-- <br> -->
     {{/if}}
   {{/each}}
 

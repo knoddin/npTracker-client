@@ -1,9 +1,22 @@
-<!-- <h3 class="park-visited">
-  {{park.name}}
-  <button class="btn btn-xs btn-primary" {{action 'update'}}>
-    Update
+
+<!-- <div class="parks">
+
+
+  <h2>Update Your Park Experience</h2>
+
+  {{new-park-name name=park.name}}
+  {{new-park-location }}
+  {{new-park-description description=park.description}}
+
+  <button type="submit" class="btn btn-success submit" {{action "update"}} on="submit">
+    Edit Your meMory
   </button>
-  <button class="btn btn-xs btn-danger" {{action 'delete'}}>
-    Delete Park
+  <button class="btn btn-default" {{action "reset"}} on="click">
+    Cancel
   </button>
-</h3> -->
+
+  {{#link-to 'about'}}
+  <button class="btn btn-default">
+   Go back  </button>
+  {{/link-to}}
+</div> -->
