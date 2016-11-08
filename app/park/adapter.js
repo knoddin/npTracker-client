@@ -12,4 +12,6 @@ export default ApplicationAdapter.extend({
     return this.ajax(url, 'POST', { data });
   },
 
+
+
 });

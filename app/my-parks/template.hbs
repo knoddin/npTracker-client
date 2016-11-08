@@ -1,0 +1,20 @@
+<h2>My Parks</h2>
+
+<!-- {{my-parks park=model
+          createPark='createPark'
+          updatePark='updatePark'
+          deletePark='deletePark'}} -->
+<!--
+
+{{#if park.editable}}
+  <li>{{park.name}} {{park.location}} {{park.description}} {{park.id}} {{park.user_id}}</li>
+{{/if}} -->
+
+
+<ul>
+{{#each model as |park|}}
+{{#if park.editable}}
+  <li>{{park.name}} {{park.location}} {{park.description}} {{park.id}} {{park.user_id}}</li>
+  {{/if}}
+{{/each}}
+</ul>

@@ -1,0 +1,11 @@
+<h2>All Parks</h2>
+<br>
+
+<!-- {{all-parks park=model}} -->
+
+
+<div>
+{{#each model as |park|}}
+  <div><h3>{{park.name}}, {{park.location}}</h3> <br> <h4>Description: {{park.description}}</h4>{{park.id}} {{park.user_id}}</div>
+{{/each}}
+</div>

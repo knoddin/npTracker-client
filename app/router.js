@@ -15,6 +15,7 @@ Router.map(function () {
   this.route('parks');
   this.route('user-parks');
   this.route('my-parks');
+  this.route('all-parks');
 });
 
 export default Router;

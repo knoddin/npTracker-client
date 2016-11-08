@@ -11,7 +11,7 @@ export default Ember.Route.extend({
       let park = this.get('store').createRecord('park', data);
       console.log(data);
       return park.save()
-      .then(() => this.transitionTo('index'));
+      .then(() => this.transitionTo('my-parks'));
     },
   },
 });
