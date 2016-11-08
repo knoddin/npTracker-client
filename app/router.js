@@ -10,6 +10,13 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
+  this.route('park', {path: '/parks/:park_id'});
+  this.route('new-park');
+  this.route('parks');
+  this.route('user-parks');
+  this.route('my-parks');
+  this.route('all-parks');
+  this.route('update-park', { path: '/update-park/:id'});
 });
 
 export default Router;

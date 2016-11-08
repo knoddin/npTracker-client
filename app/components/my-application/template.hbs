@@ -6,11 +6,14 @@
       <ul class="nav navbar-nav">
         {{#if isAuthenticated}}
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
+        <li>{{#link-to "all-parks"}}View All Parks{{/link-to}}</li>
         {{/if}}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
+        <li>{{#link-to "new-park"}}Add a Park{{/link-to}}</li>
         <li>{{#link-to "change-password"}}Change Password{{/link-to}}</li>
+        <li>{{#link-to "my-parks"}}My Parks{{/link-to}}</li>
         <li><a href="#" {{action "signOut"}}>Sign Out</a></li>
         {{else}}
         <li>{{#link-to "sign-up"}}Sign Up{{/link-to}}</li>

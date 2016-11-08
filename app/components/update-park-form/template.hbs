@@ -1,0 +1,22 @@
+<div class="park-form">
+
+<h2>Update Your Park Experience</h2>
+
+{{new-park-name name=park.name}}
+{{new-park-location location=park.location}}
+{{new-park-description description=park.description}}
+
+
+<button class="btn btn-primary" {{action "updatePark"}} on="click">
+  Update Park
+</button>
+<button class="btn btn-default" {{action "reset"}} on="click">
+  Cancel
+</button>
+
+{{#link-to 'index'}}
+<button class="btn btn-default">
+ Home</button>
+{{/link-to}}
+
+</div>
