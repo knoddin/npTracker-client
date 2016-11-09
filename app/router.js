@@ -9,6 +9,7 @@ Router.map(function () {
   this.route('sign-up');
   this.route('sign-in');
   this.route('change-password');
+  this.route('users');
   this.route('park', {path: '/parks/:park_id'});
   this.route('new-park');
   this.route('parks');
