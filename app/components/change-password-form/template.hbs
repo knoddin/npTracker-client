@@ -1,5 +1,5 @@
 <div class="form-group">
-  <label for="previous">Old Password</label>
+  <!-- <label for="previous">Old Password</label> -->
   {{input type="password"
           class="form-control"
           id="previous"
@@ -8,7 +8,7 @@
 </div>
 
 <div class="form-group">
-  <label for="next">New Password</label>
+  <!-- <label for="next">New Password</label> -->
   {{input type="password"
           class="form-control"
           id="next"
@@ -16,7 +16,7 @@
           value=passwords.next}}
 </div>
 
-<button type="submit" class="btn btn-primary" {{action "submit"}}>
+<button type="submit" class="btn btn-default" {{action "submit"}}>
   Change Password
 </button>
 

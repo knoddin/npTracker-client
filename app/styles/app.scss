@@ -1,11 +1,13 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
-h1 {
+h1, h2, label {
   color: #fff;
 }
 
 body {
+  font-family: 'Fjalla One', sans-serif;
   // background-color: #DCDCDC;
 }
 
