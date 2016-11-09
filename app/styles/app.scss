@@ -5,9 +5,25 @@ h1 {
   color: #fff;
 }
 
+body {
+  // background-color: #DCDCDC;
+}
+
+.action-buttons {
+  // clear:both;
+  float: right;
+}
+
+.all-parks {
+  overflow: scroll;
+  position: relative;
+}
+
 .parks-list {
   background-color: #fff;
   border: 1px solid #DDD;
+  border-radius: 15px;
+  clear: both;
 
 }
 

@@ -1,25 +1,23 @@
+<!-- {{my-parks}} -->
+
+
 <h2>My Parks</h2>
 
 {{#each model as |park|}}
   {{#if park.editable}}
-    <div>
+    <div class="parks-list">
       <h3 id="park-titles" class="my-parks">{{park.name}}, {{park.location}} </h3>
-      <h4 id="park-description" class="my-parks">{{park.description}}</h4>
+      <h4 id="park-description" class="my-parks">Description: {{park.description}}</h4>
 
       {{#link-to "update-park" park}}
-        <button class="btn btn-default btn-sm">
+        <button class="btn btn-default btn-sm action-buttons" >
           Edit Park
         </button>
       {{/link-to}}
 
-      <button type="submit" class="btn btn-default btn-sm" {{action "deletePark"}}>
+      <button type="submit" class="btn btn-default btn-sm action-buttons" {{action "deletePark" park}}>
         Delete
       </button>
     </div>
   {{/if}}
 {{/each}}
-
-  <!-- <button type="submit" class="btn btn-primary" {{action "submit"}}>
-    Change Password
-  </button> -->
- <!-- </div> -->

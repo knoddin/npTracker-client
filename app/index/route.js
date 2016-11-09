@@ -8,7 +8,6 @@ export default Ember.Route.extend({
         Ember.$('body').append();
       },
 
-  // when router exits the route
   deactivate: function(){
         $('body').css('background', "none");
       },

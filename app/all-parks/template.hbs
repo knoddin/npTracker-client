@@ -1,9 +1,10 @@
 <h2>See what others have to say!</h2>
 
+<div class="all-parks">
   {{#each model as |park|}}
     <div class="parks-list">
       <h3 id="park-titles" class="my-parks">{{park.name}}, {{park.location}} </h3>
       <h4 id="park-description" class="my-parks">{{park.description}}</h4>
     </div>
-      <br>
   {{/each}}
+</div>

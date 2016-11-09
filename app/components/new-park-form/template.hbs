@@ -4,14 +4,9 @@
 {{new-park-description description=park.description}}
 
 
-<button class="btn btn-primary" {{action "createPark"}} on="click">
+<button class="btn btn-default" {{action "createPark"}} on="click">
   Add Park
 </button>
 <button class="btn btn-default" {{action "reset"}} on="click">
   Cancel
 </button>
-
-{{#link-to 'index'}}
-<button class="btn btn-default">
- Home</button>
-{{/link-to}}
