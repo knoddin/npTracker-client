@@ -2,7 +2,7 @@
 @import 'bootstrap/theme';
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
-h1, h2, label {
+h1, label, .cred-labels {
   color: #fff;
 }
 
@@ -29,6 +29,6 @@ body {
 
 }
 
-.container-fluid, .ember-application {
-  width: 100%;
+.navbar-header {
+  max-width: inherit;
 }
