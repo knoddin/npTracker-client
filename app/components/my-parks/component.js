@@ -1,21 +1,9 @@
-// import Ember from 'ember';
-//
-// export default Ember.Component.extend({
-//
-//  form: {
-//    name: null,
-//
-//  },
-//
-//  actions: {
-//
-//    delete() {
-//      return this.sendAction('deletePark', this.get('park'));
-//
-//    },
-//
-//    update () {
-//      this.sendAction('updatePark', this.get('park'));
-//    },
-//  },
-// });
+import Ember from 'ember';
+
+export default Ember.Component.extend({
+  actions: {
+    deletePark () {
+      this.sendAction('deletePark', this.get('park'));
+    },
+  },
+});

@@ -10,8 +10,14 @@ export default Ember.Route.extend({
   actions: {
 
     deletePark (park) {
-      park.destroyRecord()
-      .then(() => this.transitionTo('home'));
+      return park.destroyRecord()
+      .then(() => {
+        this.transitionTo('my-parks');
+      })
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('There seems to be a problem! Try again.');
+      });
     },
 
   },

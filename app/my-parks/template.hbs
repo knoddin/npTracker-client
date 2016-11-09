@@ -1,12 +1,9 @@
 <h2>My Parks</h2>
 
 
-<div class="col-md-8 col-md-offset-2">
-
-
   {{#each model as |park|}}
   {{#if park.editable}}
-    <!-- <div> -->
+    <div>
       <h3 id="park-titles" class="my-parks">{{park.name}}, {{park.location}} </h3>
       <h4 id="park-description" class="my-parks">{{park.description}}</h4>
 
@@ -17,15 +14,17 @@
         {{/link-to}}
 
       {{#link-to 'park' park}}
-      <button id="delete" class="btn btn-default btn-sm" {{action 'deletePark'}}>
+      <button type="submit" id="delete" class="btn btn-default btn-sm" {{action "deletePark"}}>
         Delete
       </button>
       {{/link-to}}
 
-    <!-- </div> -->
-      <!-- <br> -->
+    </div>
+
     {{/if}}
   {{/each}}
 
-
- </div>
+  <!-- <button type="submit" class="btn btn-primary" {{action "submit"}}>
+    Change Password
+  </button> -->
+ <!-- </div> -->
