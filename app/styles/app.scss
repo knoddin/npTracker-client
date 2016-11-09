@@ -2,5 +2,15 @@
 @import 'bootstrap/theme';
 
 h1 {
-  color: white;
+  color: #fff;
+}
+
+.parks-list {
+  background-color: #fff;
+  border: 1px solid #DDD;
+
+}
+
+.container-fluid, .ember-application {
+  width: 100%;
 }

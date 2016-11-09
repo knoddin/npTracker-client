@@ -6,10 +6,14 @@ export default Ember.Route.extend({
     // change this to my-park to reroute to my-parks in api
   },
 
-  // getPark (data) {
-  //   let park = this.get('store').createRecord('park', data);
-  //   console.log(data);
-  //   return park.save()
-  //   .then(() => this.transitionTo('index'));
-  // },
+  activate: function(){
+        $('body').css('background', "url('/assets/images/np.jpeg') no-repeat center center fixed");
+        $('body').css('background-size', 'cover');
+        Ember.$('body').append();
+      },
+
+  // when router exits the route
+  deactivate: function(){
+        $('body').css('background', "none");
+      },
 });
