@@ -2,6 +2,11 @@
 @import 'bootstrap/theme';
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
+body {
+  background: url("/assets/images/np.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
 h1, label, .cred-labels {
   color: #fff;
 }
