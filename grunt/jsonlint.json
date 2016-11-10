@@ -1,5 +1,0 @@
-{
-  "all": {
-    "src": ["<%= paths.json.all %>"]
-  }
-}
