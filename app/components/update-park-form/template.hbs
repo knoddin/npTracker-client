@@ -1,3 +1,4 @@
+<form {{action "updatePark" on="submit"}}>
 <div class="park-form">
 
 <h2>Update Your Park Experience</h2>
@@ -6,17 +7,16 @@
 {{new-park-location location=park.location}}
 {{new-park-description description=park.description}}
 
-
-<button class="btn btn-primary" {{action "updatePark"}} on="click">
-  Update Park
+<button class="btn btn-default">
+  Update
 </button>
 <button class="btn btn-default" {{action "reset"}} on="click">
-  Cancel
+  Clear
 </button>
-
-{{#link-to 'index'}}
+{{#link-to 'my-parks'}}
 <button class="btn btn-default">
- Home</button>
+ Back</button>
 {{/link-to}}
 
 </div>
+</form>

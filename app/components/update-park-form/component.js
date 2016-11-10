@@ -10,7 +10,6 @@ export default Ember.Component.extend({
       this.sendAction('updatePark', this.get('park'));
 
     },
-
     reset () {
       this.set('park', {});
     },

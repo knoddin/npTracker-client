@@ -15,7 +15,6 @@ export default Ember.Route.extend({
         park.save();
       })
        .then(() => this.transitionTo('my-parks'));
-
      },
   },
 });

@@ -14,3 +14,6 @@ national park, make sure to edit your experience!
 
 With the click of a button, you can also view others' experiences and take note
 for your next trip!
+
+Technologies:
+This application was built using Ember.js, 

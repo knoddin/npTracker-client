@@ -1,12 +1,18 @@
-
+<form {{action "createPark" on="submit"}} >
 {{new-park-name name=park.name}}
 {{new-park-location location=park.location}}
 {{new-park-description description=park.description}}
 
 
-<button class="btn btn-default" {{action "createPark"}} on="click">
+<button class="btn btn-default">
   Add Park
 </button>
 <button class="btn btn-default" {{action "reset"}} on="click">
-  Cancel
+  Clear
 </button>
+
+{{#link-to 'index'}}
+<button class="btn btn-default">
+ Home</button>
+{{/link-to}}
+</form>
