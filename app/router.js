@@ -18,6 +18,7 @@ Router.map(function () {
   this.route('all-parks');
   this.route('update-park', { path: '/update-park/:id'});
   this.route('delete-park', { path: '/delete-park/:id'});
+  this.route('search-results');
 });
 
 export default Router;

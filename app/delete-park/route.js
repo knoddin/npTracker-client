@@ -12,6 +12,5 @@ export default Ember.Route.extend({
       park.destroyRecord()
       .then(() => this.transitionTo('my-parks'));
     },
-
   },
 });

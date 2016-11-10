@@ -1,13 +1,10 @@
-<!-- {{my-parks}} -->
-
-
 <h2>My Parks</h2>
 
 {{#each model as |park|}}
   {{#if park.editable}}
     <div class="parks-list">
-      <h3 id="park-titles" class="my-parks">{{park.name}}, {{park.location}} </h3>
-      <h4 id="park-description" class="my-parks">Description: {{park.description}}</h4>
+      <h3 id="park-titles" class="parks-header">{{park.name}}, {{park.location}} </h3>
+      <p id="park-description" class="parks-description">Description: {{park.description}}</p>
 
       {{#link-to "update-park" park}}
         <button class="btn btn-default btn-sm action-buttons" >

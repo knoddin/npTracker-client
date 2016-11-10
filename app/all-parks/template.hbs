@@ -1,10 +1,11 @@
-<h2>See what others have to say!</h2>
+<h2>See what others are saying!</h2>
+<br>
 
 <div class="all-parks">
   {{#each model as |park|}}
     <div class="parks-list">
-      <h3 id="park-titles" class="my-parks">{{park.name}}, {{park.location}} </h3>
-      <h4 id="park-description" class="my-parks">{{park.description}}</h4>
+      <h3 id="park-titles" class="parks-header">  {{park.name}}, {{park.location}} </h3>
+      <p id="park-description" class="parks-description">{{park.description}}</p>
     </div>
   {{/each}}
 </div>

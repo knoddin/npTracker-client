@@ -6,9 +6,17 @@ h1, label, .cred-labels {
   color: #fff;
 }
 
+h3 {
+  padding-left: 1%;
+}
+
 body {
   font-family: 'Fjalla One', sans-serif;
   // background-color: #DCDCDC;
+}
+
+p {
+  padding-left: 1%;
 }
 
 .action-buttons {
@@ -24,9 +32,17 @@ body {
 .parks-list {
   background-color: #fff;
   border: 1px solid #DDD;
-  border-radius: 15px;
   clear: both;
+  padding: 0 0 4%;
 
+}
+
+.parks-description {
+  color: #696969;
+}
+
+.parks-header {
+  padding-top: 0;
 }
 
 .navbar-header {
