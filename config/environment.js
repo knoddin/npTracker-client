@@ -49,9 +49,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL ='/npTracker-client';
     ENV.locationType = 'hash';
-    ENV.apiHost = 'https://blooming-beach-29358.herokuapp.com'
+    ENV.rootURL ='/npTracker-client';
+    ENV.apiHost = 'https://blooming-beach-29358.herokuapp.com';
 
   }
 
