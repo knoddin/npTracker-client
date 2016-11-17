@@ -1,11 +1,12 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 body {
   background: url("http://i.imgur.com/8tFOa3P.jpg") no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Lato', sans-serif;
+
 }
 
 h1, label, .cred-labels {
