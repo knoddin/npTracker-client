@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
 body {
-  // background: url("/assets/images/np.jpeg") no-repeat center center fixed;
-  // background-size: cover;
+  background: url("http://i.imgur.com/8tFOa3P.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 h1, label, .cred-labels {
@@ -12,20 +13,16 @@ h1, label, .cred-labels {
 }
 
 h1 {
+  color: #fff;
   padding-left: 0;
 }
 
 h2 {
-  color: #E48A76;
+  color: #fff;
 }
 
 h3 {
   padding-left: 1%;
-}
-
-body {
-  font-family: 'Fjalla One', sans-serif;
-  // background-color: #D8C1BC;
 }
 
 p {
